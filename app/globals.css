@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://unpkg.com/aos@next/dist/aos.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 20%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 20%;
+  --primary: 340 33% 75%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 340 33% 95%;
+  --secondary-foreground: 240 10% 20%;
+  --muted: 340 33% 95%;
+  --muted-foreground: 240 10% 40%;
+  --accent: 340 33% 85%;
+  --accent-foreground: 240 10% 20%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 340 33% 90%;
+  --input: 340 33% 90%;
+  --ring: 340 33% 75%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 340 33% 75%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 340 33% 95%;
+  --secondary-foreground: 240 10% 20%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 340 33% 85%;
+  --accent-foreground: 240 10% 20%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 340 33% 75%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
+    color: #5d4954;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Dancing Script", cursive;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-script {
+    font-family: "Dancing Script", cursive;
+  }
+  .font-sans {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add padding to account for fixed header */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8a7b1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c797a1;
+}
+
