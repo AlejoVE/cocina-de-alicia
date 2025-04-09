@@ -1,24 +1,17 @@
-import type { Metadata } from 'next';
+import type React from 'react';
 import './globals.css';
-import { ThemeProvider } from '../components/theme-provider';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'La cocinita de Alicia',
-	description: 'Created with v0',
-	generator: 'v0.dev',
+	title: 'Alicia Escalona - Repostería',
+	description: 'Tartas y postres personalizados para tus eventos especiales',
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en'>
-			<body>
-				<ThemeProvider attribute='class' defaultTheme='light'>
-					{children}
-				</ThemeProvider>
+		<html lang='es' suppressHydrationWarning>
+			<body suppressHydrationWarning className='min-h-screen bg-gradient-to-b from-[#FFF9F9] to-[#F9F3F3] bg-fixed'>
+				{children}
 			</body>
 		</html>
 	);

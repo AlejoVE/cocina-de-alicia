@@ -44,7 +44,7 @@ export default function Contact() {
 									<div className='ml-4'>
 										<p className='text-[#5D4954] font-medium'>Correo Electrónico</p>
 										<a
-											href='mailto:alicia.escalona@gmail.com'
+											href='mailto:aliciae49@hotmail.com'
 											className='text-[#5D4954] hover:text-[#D8A7B1] transition-colors'
 										>
 											aliciae49@hotmail.com
@@ -85,7 +85,8 @@ export default function Contact() {
 
 							<div className='space-y-6'>
 								<a
-									href='#'
+									href='https://www.instagram.com/aliciae49/'
+									target='_blank'
 									className='flex items-center p-3 rounded-lg bg-white/50 hover:bg-[#F9E2E8]/30 transition-colors group'
 								>
 									<div className='bg-[#F9E2E8] p-2 rounded-full'>
@@ -97,7 +98,8 @@ export default function Contact() {
 								</a>
 
 								<a
-									href='#'
+									href='https://www.facebook.com/alicia.escalona.96'
+									target='_blank'
 									className='flex items-center p-3 rounded-lg bg-white/50 hover:bg-[#F9E2E8]/30 transition-colors group'
 								>
 									<div className='bg-[#F9E2E8] p-2 rounded-full'>

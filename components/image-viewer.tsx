@@ -56,18 +56,18 @@ export default function ImageViewer({ isOpen, onClose, imageSrc, imageAlt }: Ima
 						animate={{ scale: 1, opacity: 1 }}
 						exit={{ scale: 0.9, opacity: 0 }}
 						transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-						className='relative max-w-4xl w-full max-h-[90vh] rounded-xl overflow-hidden bg-white shadow-2xl'
+						className='relative max-w-4xl w-[calc(100%-2rem)] max-h-[90vh] rounded-xl overflow-hidden bg-white shadow-2xl'
 						onClick={(e) => e.stopPropagation()}
 					>
 						<button
 							onClick={onClose}
-							className='absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 text-[#5D4954] hover:text-[#D8A7B1] transition-colors'
+							className='absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-2.5 text-[#5D4954] hover:bg-[#F9E2E8] hover:text-[#D8A7B1] transition-colors shadow-md'
 							aria-label='Close image viewer'
 						>
 							<X size={24} />
 						</button>
 
-						<div className='relative w-full h-[80vh]'>
+						<div className='relative w-full h-[70vh] md:h-[80vh]'>
 							<Image
 								src={imageSrc || '/placeholder.svg'}
 								alt={imageAlt}

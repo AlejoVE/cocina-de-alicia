@@ -18,7 +18,7 @@ export default function About() {
 							<div className='absolute inset-0 bg-[#D8A7B1]/40 rounded-full transform -translate-x-4 -translate-y-4 z-0'></div>
 							<div className='absolute inset-0 bg-[#E8C4CF]/40 rounded-full transform translate-x-4 translate-y-4 z-0'></div>
 							<div className='relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-white shadow-lg'>
-								<Image src='/images/chef.jpg' alt='Alicia Escalona' fill className='object-cover' />
+								<Image src='/images/chef3.jpeg' alt='Alicia Escalona' fill className='object-cover' />
 							</div>
 						</div>
 					</div>

@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { desserts, categories } from '@/lib/data';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { motion } from 'framer-motion';
 import ImageViewer from './image-viewer';
+import { X } from 'lucide-react';
 
 export default function WorkGallery() {
 	const [selectedRecipe, setSelectedRecipe] = useState<string | null>(null);
@@ -127,13 +128,21 @@ export default function WorkGallery() {
 
 			{/* Recipe Dialog */}
 			<Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-				<DialogContent className='max-w-3xl bg-[#FFF9F9] border-[#F9E2E8]'>
-					<DialogHeader>
+				<DialogContent className='w-[85%] max-w-md sm:max-w-lg md:max-w-2xl mx-auto max-h-[90vh] overflow-y-auto bg-[#FFF9F9] border-[#F9E2E8] p-5 rounded-xl'>
+					<div className='flex items-center justify-between mb-2'>
 						<DialogTitle className='text-2xl font-script text-[#5D4954]'>{selectedDessert?.title}</DialogTitle>
-					</DialogHeader>
-					<DialogDescription>
+						<button
+							onClick={() => setIsDialogOpen(false)}
+							className='bg-[#F9E2E8] hover:bg-[#D8A7B1] transition-colors p-2 rounded-full text-[#5D4954]'
+							aria-label='Cerrar receta'
+						>
+							<X size={20} />
+						</button>
+					</div>
+
+					<div className='mt-4'>
 						{/* Recipe Image */}
-						<div className='relative w-full h-64 mb-6 rounded-lg overflow-hidden'>
+						<div className='relative w-full h-48 sm:h-64 mb-6 rounded-lg overflow-hidden'>
 							<Image
 								src={selectedDessert?.image || '/placeholder.svg'}
 								alt={selectedDessert?.title || 'Receta'}
@@ -141,8 +150,8 @@ export default function WorkGallery() {
 								className='object-cover object-center'
 								sizes='(max-width: 768px) 100vw, 800px'
 							/>
-							<div
-								className='absolute inset-0 cursor-pointer hover:bg-black/10 transition-colors flex items-center justify-center'
+							<button
+								className='absolute inset-0 w-full h-full cursor-pointer hover:bg-black/10 transition-colors flex items-center justify-center'
 								onClick={() => {
 									if (selectedDessert) {
 										setIsDialogOpen(false);
@@ -151,8 +160,9 @@ export default function WorkGallery() {
 										}, 300);
 									}
 								}}
+								aria-label='Ver imagen completa'
 							>
-								<div className='bg-white/80 backdrop-blur-sm rounded-full p-2 opacity-0 hover:opacity-100 transition-opacity'>
+								<span className='bg-white/80 backdrop-blur-sm rounded-full p-2 opacity-0 hover:opacity-100 transition-opacity'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										width='24'
@@ -169,8 +179,8 @@ export default function WorkGallery() {
 										<path d='M10 14 21 3'></path>
 										<path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'></path>
 									</svg>
-								</div>
-							</div>
+								</span>
+							</button>
 						</div>
 
 						{/* Recipe Content */}
@@ -199,7 +209,7 @@ export default function WorkGallery() {
 								/>
 							)}
 						</div>
-					</DialogDescription>
+					</div>
 				</DialogContent>
 			</Dialog>
 
