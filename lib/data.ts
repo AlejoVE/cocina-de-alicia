@@ -60,13 +60,7 @@ export const desserts: Dessert[] = [
     category: "Tartas",
     recipe: null
   },
-  {
-    id: 6,
-    title: "Tarta de Melocotón",
-    image: "/images/tarta-melocoton.jpg",
-    category: "Tartas",
-    recipe: null,
-  },
+
   {
     id: 7,
     title: "Dulce de Lechosa",

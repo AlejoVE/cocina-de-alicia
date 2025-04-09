@@ -24,16 +24,14 @@ export default function About() {
 					</div>
 
 					<div className='w-full md:w-3/5' data-aos='fade-left'>
-						<h3 className='text-2xl font-script font-bold text-[#D8A7B1] mb-6'>Pastelera Apasionada</h3>
+						<h3 className='text-2xl font-script font-bold text-[#D8A7B1] mb-6'>Repostera Apasionada</h3>
 						<p className='text-lg text-[#5D4954] leading-relaxed mb-4'>
-							Soy Alicia Escalona, una repostera apasionada con años de experiencia creando postres únicos. Me
-							especializo en tartas, merengues y ganaches, siempre buscando llevar alegría a través de mis
-							creaciones.
+							Soy Alicia Escalona, me especializo en tartas, merengues y ganaches, siempre buscando llevar
+							alegría a través de mis creaciones.
 						</p>
 						<p className='text-lg text-[#5D4954] leading-relaxed mb-4'>
 							Mi pasión por la repostería comenzó desde muy joven, observando a mi abuela preparar deliciosos
-							dulces tradicionales. Con el tiempo, he perfeccionado mis técnicas y desarrollado mi propio estilo,
-							combinando sabores clásicos con presentaciones modernas y elegantes.
+							dulces tradicionales.
 						</p>
 						<p className='text-lg text-[#5D4954] leading-relaxed'>
 							Cada postre que creo es único y está hecho con los mejores ingredientes, dedicación y mucho amor.
