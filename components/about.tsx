@@ -27,8 +27,8 @@ export default function About() {
 						<h3 className='text-2xl font-script font-bold text-[#D8A7B1] mb-6'>Pastelera Apasionada</h3>
 						<p className='text-lg text-[#5D4954] leading-relaxed mb-4'>
 							Soy Alicia Escalona, una repostera apasionada con años de experiencia creando postres únicos. Me
-							especializo en tartas personalizadas, merengues y ganaches, siempre buscando llevar alegría a
-							través de mis creaciones.
+							especializo en tartas, merengues y ganaches, siempre buscando llevar alegría a través de mis
+							creaciones.
 						</p>
 						<p className='text-lg text-[#5D4954] leading-relaxed mb-4'>
 							Mi pasión por la repostería comenzó desde muy joven, observando a mi abuela preparar deliciosos
@@ -47,7 +47,7 @@ export default function About() {
 									<CakeSlice />
 								</div>
 								<div>
-									<h4 className='font-medium text-[#5D4954]'>Tartas Personalizadas</h4>
+									<h4 className='font-medium text-[#5D4954]'>Tartas</h4>
 									<p className='text-sm text-[#5D4954]/70'>Para cada ocasión</p>
 								</div>
 							</div>

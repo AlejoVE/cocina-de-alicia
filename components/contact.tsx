@@ -11,7 +11,7 @@ export default function Contact() {
 					<h2 className='text-3xl md:text-4xl font-script font-bold text-[#5D4954] mb-4'>Contacto</h2>
 					<div className='w-24 h-1 bg-[#D8A7B1] mx-auto mb-6 rounded-full'></div>
 					<p className='text-center text-[#5D4954] mb-8 max-w-2xl mx-auto'>
-						¿Tienes alguna consulta o quieres hacer un pedido? ¡No dudes en contactarme!
+						¿Tienes alguna consulta? ¡No dudes en contactarme!
 					</p>
 				</div>
 

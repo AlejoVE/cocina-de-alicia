@@ -54,8 +54,7 @@ export default function Hero() {
 					transition={{ duration: 0.8, delay: 0.6 }}
 					className='text-lg md:text-xl text-white mb-8 drop-shadow-md max-w-2xl mx-auto'
 				>
-					Tartas y postres personalizados para tus eventos especiales, elaborados con los mejores ingredientes y
-					mucho amor
+					Tartas y postres para tus eventos especiales, elaborados con los mejores ingredientes y mucho amor
 				</motion.p>
 
 				<motion.div
