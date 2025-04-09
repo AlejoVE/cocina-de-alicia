@@ -17,7 +17,7 @@ export const desserts: Dessert[] = [
   {
     id: 2,
     title: "Tarta de Chocolate  y Fresas",
-    image: "/images/tarta-chocolate.jpg",
+    image: "/images/tarta-chocolate-fresa2.jpg",
     category: "Tartas",
     recipe: null,
   },
@@ -72,6 +72,20 @@ export const desserts: Dessert[] = [
     title: "Dulce de Lechosa",
     image: "/images/dulce-lechosa.jpg",
     category: "Dulces",
+    recipe: null,
+  },
+  {
+    id: 8,
+    title: "Pan Dulce",
+    image: "/images/pan-dulce.jpg",
+    category: "Panadería",
+    recipe: null,
+  },
+  {
+    id: 9,
+    title: "Tequeños",
+    image: "/images/tequenos.jpg",
+    category: "Panadería",
     recipe: null,
   },
 
